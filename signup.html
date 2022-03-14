@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="icon" type="image/x-icon" href="./Images/favicon.jpg">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- Header Start -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <img width="130px" height="70px"src="./Images/navbaricon.jpg">
+        <a class="navbar-brand" href="index.html"><h3>Kerala Tourism</h3></a>
+        <div class="collapse navbar-collapse topnav" id="navbarTogglerDemo03">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html" id="tabs" ><h5>Home</h5></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#" id="tabs"><h5>About</h5></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="explore.html" tabindex="-1" aria-disabled="true" id="tabs"><h5>Explore</h5></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active"  href="#" id="tabs"><h5>Tour Packages</h5></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active " href="#" id="tabs"><h5>Taste of Kerala</h5></a>
+              </li>
+            </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Header End -->
+    <section class="vh-100 bg-image" style="background:linear-gradient(#f5d418, #11ad8b 85%, #d9f867);" >
+      <div class="signup-form">
+        <form style="padding-top: 75px; color:rgb(20, 20, 20);">
+        <div class="form-header">
+          <h2 style="font-family:cursive; font-weight:bolder;color:darkgreen;">Create an account</h2>
+          
+        </div>
+            <div class="form-group">
+          <label>Name</label>
+              <input type="text" class="form-control" name="username" required="required">
+            </div>
+            <div class="form-group">
+          <label>Email Address</label>
+              <input type="email" class="form-control" name="email" required="required">
+            </div>
+        <div class="form-group">
+          <label>Password</label>
+                <input type="password" class="form-control" name="password" required="required">
+            </div>
+        <div class="form-group">
+          <label>Confirm Password</label>
+                <input type="password" class="form-control" name="confirm_password" required="required">
+            </div>        
+            <div class="form-group">
+          <label class="form-check-label"><input type="checkbox" required="required"> I accept the <a href="#">Terms of Use</a> &amp; <a href="#">Privacy Policy</a></label>
+        </div>
+        <div class="form-group">
+          <button type="submit" class="btn btn-primary btn-block btn-lg"><a href="index.html" style="text-decoration: none; color: white;">Sign Up</a></button>
+          
+        </div>	
+        </form>
+      
+    </div>
+    </section>
+      <!--Footer start-->
+      <section>
+        <footer class="text-center text-lg-start text-white" style="background-color: rgb(0, 0, 0)">
+          <!-- Grid container -->
+            <div class="container p-4 pb-0">
+              <hr class="my-3">
+              <!-- Section: Copyright -->
+                <section class="p-3 pt-0">
+                <div class="row d-flex align-items-center">
+                <!-- Grid column -->
+                  <div class="col-md-7 col-lg-8 text-center text-md-start">
+                  <!-- Copyright -->
+                    <div class="p-3">© 2022 Copyright:<label class="text-white" >    Developed and Maintained by Akhila S</label>
+                    </div>
+                  <!-- Copyright -->
+                  </div>
+                  <!-- Grid column -->
+                  <!-- Grid column -->
+                  <div class="col-md-5 col-lg-4 ml-lg-0 text-center text-md-end">
+                  <!-- Facebook -->
+                    <a class="btn btn-outline-light btn-floating m-1" class="text-white" role="button" href="https://www.facebook.com/keralatourismofficial"><i class="fab fa-facebook-f" ></i></a>
+                  <!-- Twitter -->
+                  <a class="btn btn-outline-light btn-floating m-1" class="text-white" role="button" href="https://twitter.com/keralatourism"><i class="fab fa-twitter"></i></a>
+                  <!-- Google -->
+                  <a class="btn btn-outline-light btn-floating m-1" class="text-white" role="button" href="https://www.youtube.com/keralatourism"><i class="fab fa-youtube"></i></a>
+                  <!-- Instagram -->
+                  <a class="btn btn-outline-light btn-floating m-1" class="text-white" role="button" href="https://www.instagram.com/keralatourism/?hl=en"><i class="fab fa-instagram"></i></a>
+                  </div>
+                  <!-- Grid column -->
+                  </div>
+                </section>
+                <!-- Section: Copyright -->
+              </div>
+              <!-- Grid container -->
+          </footer>
+        </section>
+</body>
+</html>
+
