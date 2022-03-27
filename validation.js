@@ -36,7 +36,6 @@ function validate2(){
     let n=validateemail();
     let e=validatephn();
     let ph=validatepwd();
-    console.log(n,e,ph);
     return (n&&e&&ph);
 }  
 
@@ -56,30 +55,24 @@ function validateemail(){
         erroremail.style.color="red";
         erroremail.style.fontWeight="bold";
         return false;
-        }
-       
-    }
-
-    
+        } 
+    }    
 }
 function validatephn(){
-    var ph = /^([0-9]{3})[\-. ]?([0-9]{3})[\-. ]?([0-9]{4})$/;
-    if(ph.test(phn.value)){
-        errorphn.innerHTML=" ";
+    var phoneNum = /^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$/; 
+    if(phn.value.match(phoneNum)) {
         return true;
     }
     else{
         if(phn.value==""){
-            
             errorphn.innerHTML=" ";
-        }
+         }
         else{ 
-        errorphn.innerHTML="Invalid Phone number";
-        errorphn.style.color="red";
-        errorphn.style.fontWeight="bold";
-        return false;
+            errorphn.innerHTML="Invalid Phone number";
+            errorphn.style.color="red";
+            errorphn.style.fontWeight="bold";
+            return false;
         }
-       
     }
 }
 function validatepwd(){
@@ -90,7 +83,7 @@ function validatepwd(){
        return false;
     }
     else if(!(p.test(pwd.value))){
-        errorpwd.innerHTML="<b>Hint</b>: Use atleast one (lowercase,uppercase & number) and minimum 8 chracters,<spam style='color:red'>No special characters are allowed.</spam>";
+        errorpwd.innerHTML="<b>Hint</b>: Minimum 8 characters, at least one uppercase, and one lower case, must contain at least one number<spam style='color:red'></br></spam>";
         errorpwd.style.fontSize="10px";
         errorpwd.style.color="wheat";
 
@@ -127,6 +120,7 @@ function strengthpwd(pwd) {
     }
     var strength = "";
     if(passscr>=100){
+        errorpwd.innerHTML=" ";
         strength = "<small class='progress-bar bg-success' style='width: 100%; color:black; font-weight:bold;'>Strong</small>";
          
     }
